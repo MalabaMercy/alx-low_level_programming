@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 /**
  * print_diagsums - print the sum of the two
@@ -17,7 +18,7 @@ void print_diagsums(int *a, int size)
 		if (j % (size - 1) == 0 && j != 0 && i < size * size - 1)
 			S2 += a[j];
 	}
-	printf("%d, %d\n", S1, S2);
+	putchar("%d, %d\n", S1, S2);
 }
 
 
