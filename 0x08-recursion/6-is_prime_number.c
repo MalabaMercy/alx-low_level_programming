@@ -6,14 +6,10 @@
  */
 int is_prime_number(int n)
 {
-	int c;
+	int p;
 
-	if (n % c == 0)
-	{
-		if (n == c)
+		if (n == p)
 			return (1);
-		else
+		else if (n != 1)
 			return (0);
-	}
-	return (0 + (n, c + 1));
 }
