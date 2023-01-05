@@ -6,10 +6,15 @@
  */
 int _sqrt_recursion(int n)
 {
-	int sqrt = n;
+	int c;
 
-	if (n != sqrt)
+	if (c % (n / c) == 0)
 	{
-		return (-1);
+		if (c * (n / c) == n)
+			return (c);
+		else
+			return (-1);
 	}
+	return (0 + (n, c + 1));
 }
+

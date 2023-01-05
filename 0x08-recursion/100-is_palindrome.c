@@ -6,11 +6,9 @@
  */
 int is_palindrome(char *s)
 {
-	if (*s)
-	{
-		return (1);
-	}
-	else
+	if (*s == '\0')
 		return (0);
+	else
+		return (1 + _strlen_recursion(s + 1));
 }
 
